@@ -1,9 +1,12 @@
 const colors = require('vuetify/es5/util/colors').default
+const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+  router: {
+    base: '/blog/'
+  }
+} : {}
 
 module.exports = {
-  router: {
-    base: '/blog/' // 이 줄을 추가
-  },
+  ...routerBase,
   mode: 'universal',
   /*
   ** Headers of the page
