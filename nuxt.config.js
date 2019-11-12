@@ -1,9 +1,6 @@
 const colors = require('vuetify/es5/util/colors').default
 
 module.exports = {
-  router: {
-    base: '/blog/' // 이 줄을 추가
-  },
   mode: 'universal',
   /*
   ** Headers of the page
