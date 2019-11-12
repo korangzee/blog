@@ -1,12 +1,9 @@
 const colors = require('vuetify/es5/util/colors').default
-const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
-  router: {
-    base: '/blog/'
-  }
-} : {}
 
 module.exports = {
-  ...routerBase,
+  router: {
+    base: '/blog/'
+  },
   mode: 'universal',
   /*
   ** Headers of the page
