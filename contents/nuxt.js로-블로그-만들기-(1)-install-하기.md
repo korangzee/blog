@@ -1,22 +1,16 @@
----
-path: "url 정보"
-date: "생성 일자"
-category: "Example"
-tags:
-  - tag1
-  - tag2
-title: nuxt.js로 블로그 만들기 (1) install 하기
----
+<meta name="title" content="nuxt.js로-블로그-만들기-(1)-install-하기">
+<meta name="date" content="2019-11-19">
+
 
 # nuxt.js로 블로그 만들기 (1) install 하기
 
 # 설치
 
 mac os 기준으로 설명한다.
-
-    $ brew install yarn // mac os - brew를 이용해서 yarn을 설치
-    $ yarn create nuxt-app <프로젝트 이름> // yarn을 이용해 nuxt-app설치
-
+```js
+$ brew install yarn // mac os - brew를 이용해서 yarn을 설치
+$ yarn create nuxt-app <프로젝트 이름> // yarn을 이용해 nuxt-app설치
+```
 # 각종 설정
 
 - Project name: 본인에 맞게 입력
@@ -36,10 +30,9 @@ mac os 기준으로 설명한다.
 
 # Dev
 
-```
-    $ cd blog
-    $ yarn dev // localhost:3000으로 접속 가능
-}
+```bash
+$ cd blog
+$ yarn dev // localhost:3000으로 접속 가능
 ```
 
 # 참고 사이트

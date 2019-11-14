@@ -1,5 +1,4 @@
 const colors = require('vuetify/es5/util/colors').default
-var path = require('path')
 
 module.exports = {
   router: {
@@ -47,6 +46,7 @@ module.exports = {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
+    '@nuxtjs/markdownit',
   ],
   /*
   ** Axios module configuration
@@ -84,15 +84,19 @@ module.exports = {
     */
     extend (config, ctx) {
 
-      config.module.rules.push(
-        {
-            test: /\.md$/,
-            include: path.resolve(__dirname, "contents"),
-            loader: "frontmatter-markdown-loader",
-        }
-    );
-
     }
-  }
+  },
+  
+  markdownit: {
+    injected: true,
+    html: true,
+    use: [
+      'markdown-it-highlightjs',
+    ],
+  },
+  css: [
+    { src: '~/node_modules/highlight.js/styles/vs2015.css', lang: 'css' }
+  ],
+
 }
 
