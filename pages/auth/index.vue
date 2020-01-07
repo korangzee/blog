@@ -34,29 +34,29 @@
 
 
 <script>
+import axios from 'axios'
 export default {
   data() {
     return {
       items: [],
+      code: '',
     }
   },
-  created(){
+  async created(){
     console.log(this.$router)
+    console.log(this.$router.history.current.query.code)
+    this.code = this.$router.history.current.query.code
+    if(this.code) {
+      console.log('post')
+      let res = await axios.post(`https://api.instagram.com/oauth/access_token`, { headers: { 'Content-type': 'application/x-www-form-urlencoded', }, app_id : '2461918490735728', app_secret: '05711ff94fdcca7b23a7cc4371c95c21', grant_type: 'authorization_code', redirect_uri:'https://korangzee.github.io/blog/auth/', code:this.code})
+      console.log(res)
+    }
   },
   methods: {
     async getFromInsta(){
       console.log(this.$router)
 
             // GET 요청으로 code를 받아온다.
-                // let res = await axios({
-                //     method: 'get',
-                //     url: 'https://api.instagram.com/oauth/authorize?app_id=2461918490735728&redirect_uri=https://korangzee.github.io/blog/&scope=user_profile,user_media&response_type=code',
-                // })
-
-                // console.log(res)
-
-
-
 
             // code를 활용하여 액세스 토큰을 받아온다
             // 액세스 토큰을 활용하여 고객의 미디어 아이디를 받아온다
