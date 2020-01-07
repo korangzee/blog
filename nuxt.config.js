@@ -47,12 +47,21 @@ module.exports = {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/markdownit',
+    '@nuxtjs/proxy',
   ],
+  // proxy: {
+  //   '/api': {
+  //     target: 'http://example.com',
+  //     pathRewrite: {
+  //       '^/api' : '/'
+  //       }
+  //     },
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
+    //proxy: true     // proxy 사용
   },
   /*
   ** vuetify module configuration
