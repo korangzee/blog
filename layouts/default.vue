@@ -60,6 +60,11 @@ export default {
           title: 'posts',
           to: '/posts'
         },
+        {
+          icon: 'mdi-chart-bubble',
+          title: 'auth',
+          to: '/auth'
+        },
       ],
       right: true,
       title: "Korangzee's blog"
