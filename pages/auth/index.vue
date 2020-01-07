@@ -19,7 +19,7 @@
     <v-col cols="12">
       <v-card>
           <v-card-title>
-              사진 보관함
+              사진 보관함a
           </v-card-title>
           <v-divider></v-divider>
           <v-card-text>
@@ -40,8 +40,12 @@ export default {
       items: [],
     }
   },
+  created(){
+    console.log(this.$router)
+  },
   methods: {
     async getFromInsta(){
+      console.log(this.$router)
 
             // GET 요청으로 code를 받아온다.
                 // let res = await axios({
