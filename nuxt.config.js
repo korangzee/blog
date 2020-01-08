@@ -49,21 +49,21 @@ module.exports = {
     '@nuxtjs/markdownit',
     '@nuxtjs/proxy',
   ],
-  proxy: {
-    // '/api': 'https://api.instagram.com'
-    '/api': {
-      target: 'https://api.instagram.com',
-      pathRewrite: {
-        '^/api' : '/'
-        }
-      }
-    },
+  // proxy: {
+  //   // '/api': 'https://api.instagram.com'
+  //   '/api': {
+  //     target: 'https://api.instagram.com',
+  //     pathRewrite: {
+  //       '^/api' : '/'
+  //       }
+  //     }
+  //   },
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
-    proxy: true     // proxy 사용
+    // proxy: true     // proxy 사용
     //baseURL: 'https://api.instagram.com',
     //proxyHeaders: false,
     //credentials: false,
