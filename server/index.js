@@ -26,14 +26,10 @@ async function start () {
   app.use(nuxt.render)
   app.use(cors())
 
-  const corsOptions={
-    origin: 'https://api.instagram.com'
-  }
+  
 
   // Listen the server
-  app.get('/oauth/access_token', cors(corsOptions), (req,res,next)=>{
-    res.json({msg:'cors'})
-  })
+  app.options('*', cors())
 
   app.listen(port, host)
   consola.ready({
