@@ -62,7 +62,7 @@ module.exports = {
   */
   axios: {
     //proxy: true     // proxy 사용
-    baseURL: 'https://api.instagram.com/oauth/authorize',
+    baseURL: 'https://api.instagram.com',
     proxyHeaders: false,
     credentials: false,
   },
