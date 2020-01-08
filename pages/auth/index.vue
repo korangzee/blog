@@ -19,7 +19,7 @@
     <v-col cols="12">
       <v-card>
           <v-card-title>
-              사진 보관함abc
+              사진 보관함abcd
           </v-card-title>
           <v-divider></v-divider>
           <v-card-text>
@@ -55,7 +55,7 @@ export default {
       //let res = await axios.post(`https://api.instagram.com/oauth/access_token`, { headers: { 'content-type': 'application/x-www-form-urlencoded', 'Access-Control-Allow-Origin': '*'}, app_id : '2461918490735728', app_secret: '05711ff94fdcca7b23a7cc4371c95c21', grant_type: 'authorization_code', redirect_uri:'https://korangzee.github.io/blog/auth/', code:this.code})
       //let res = await this.$jsonp('https://api.instagram.com/oauth/access_token', { headers: { 'content-type': 'application/x-www-form-urlencoded', 'Access-Control-Allow-Origin': '*'}, app_id : '2461918490735728', app_secret: '05711ff94fdcca7b23a7cc4371c95c21', grant_type: 'authorization_code', redirect_uri:'https://korangzee.github.io/blog/auth/', code:this.code })
       
-      $.noConflict();
+      //$.noConflict();
       var J = jQuery;
       J.ajax({
         url: "https://api.instagram.com/oauth/access_token",
