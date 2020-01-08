@@ -26,7 +26,7 @@ async function start () {
   app.use(nuxt.render)
 
   const corsOptions = {
-      origin: 'https://korangzee.github.io/blog/auth/',
+      origin: 'https://korangzee.github.io/',
       credentials: true
   }
   app.use(cors(corsOptions))
