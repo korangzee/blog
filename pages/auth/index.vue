@@ -19,7 +19,7 @@
     <v-col cols="12">
       <v-card>
           <v-card-title>
-              사진 보관함abcde
+              사진 보관함a
           </v-card-title>
           <v-divider></v-divider>
           <v-card-text>
@@ -52,8 +52,21 @@ export default {
     if(this.code) {
       console.log('post')
       //let res = await axios.post(`https://api.instagram.com/oauth/access_token`, { headers: { 'content-type': 'application/x-www-form-urlencoded', 'Access-Control-Allow-Origin': '*'}, app_id : '2461918490735728', app_secret: '05711ff94fdcca7b23a7cc4371c95c21', grant_type: 'authorization_code', redirect_uri:'https://korangzee.github.io/blog/auth/', code:this.code})
-      let res = await this.$jsonp('https://api.instagram.com/oauth/access_token', { headers: { 'content-type': 'application/x-www-form-urlencoded', 'Access-Control-Allow-Origin': '*'}, app_id : '2461918490735728', app_secret: '05711ff94fdcca7b23a7cc4371c95c21', grant_type: 'authorization_code', redirect_uri:'https://korangzee.github.io/blog/auth/', code:this.code })
-      console.log(res)
+      //let res = await this.$jsonp('https://api.instagram.com/oauth/access_token', { headers: { 'content-type': 'application/x-www-form-urlencoded', 'Access-Control-Allow-Origin': '*'}, app_id : '2461918490735728', app_secret: '05711ff94fdcca7b23a7cc4371c95c21', grant_type: 'authorization_code', redirect_uri:'https://korangzee.github.io/blog/auth/', code:this.code })
+      $.ajax({
+        url: "https://api.instagram.com/oauth/access_token",
+        type: "POST",
+        crossDomain: true,
+        data: { app_id : '2461918490735728', app_secret: '05711ff94fdcca7b23a7cc4371c95c21', grant_type: 'authorization_code', redirect_uri:'https://korangzee.github.io/blog/auth/', code:this.code },
+        dataType: "json",
+        success:function(result){
+            alert(JSON.stringify(result));
+        },
+        error:function(xhr,status,error){
+            alert(status);
+        }
+      });
+      //console.log(res)
     }
   },
   methods: {
