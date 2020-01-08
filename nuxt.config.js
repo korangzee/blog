@@ -62,6 +62,9 @@ module.exports = {
   */
   axios: {
     //proxy: true     // proxy 사용
+    baseURL: 'https://korangzee.github.io',
+    proxyHeaders: false,
+    credentials: false,
   },
   /*
   ** vuetify module configuration
