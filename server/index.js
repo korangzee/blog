@@ -24,7 +24,12 @@ async function start () {
 
   // Give nuxt middleware to express
   app.use(nuxt.render)
-  app.use(cors())
+
+  const corsOptions = {
+      origin: 'https://korangzee.github.io/blog/auth/',
+      credentials: true
+  }
+  app.use(cors(corsOptions))
 
   
 
