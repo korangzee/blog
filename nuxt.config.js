@@ -63,7 +63,7 @@ module.exports = {
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
-    // proxy: true     // proxy 사용
+    proxy: 'https://korangzee.github.io/blog/auth/'     // proxy 사용
     //baseURL: 'https://api.instagram.com',
     //proxyHeaders: false,
     //credentials: false,
