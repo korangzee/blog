@@ -27,6 +27,12 @@ async function start () {
   app.use(cors())
 
   // Listen the server
+  app.all('/*', function(req,res,next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "X-Requested-With");
+    next()
+  })
+
   app.listen(port, host)
   consola.ready({
     message: `Server listening on http://${host}:${port}`,
