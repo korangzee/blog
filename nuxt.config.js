@@ -50,13 +50,14 @@ module.exports = {
     '@nuxtjs/proxy',
   ],
   proxy: {
-    '/api': 'https://api.instagram.com'
-    // '/api': {
-    //   target: 'http://example.com',
-    //   pathRewrite: {
-    //     '^/api' : '/'
-    //     }
-      },
+    // '/api': 'https://api.instagram.com'
+    '/api': {
+      target: 'https://api.instagram.com',
+      pathRewrite: {
+        '^/api' : '/'
+        }
+      }
+    },
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
