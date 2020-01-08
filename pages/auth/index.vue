@@ -19,7 +19,7 @@
     <v-col cols="12">
       <v-card>
           <v-card-title>
-              사진 보관함abcdef
+              사진 보관함
           </v-card-title>
           <v-divider></v-divider>
           <v-card-text>
