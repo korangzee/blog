@@ -49,22 +49,23 @@ module.exports = {
     '@nuxtjs/markdownit',
     '@nuxtjs/proxy',
   ],
-  // proxy: {
-  //   '/api': {
-  //     target: 'http://example.com',
-  //     pathRewrite: {
-  //       '^/api' : '/'
-  //       }
-  //     },
+  proxy: {
+    '/api': 'https://api.instagram.com'
+    // '/api': {
+    //   target: 'http://example.com',
+    //   pathRewrite: {
+    //     '^/api' : '/'
+    //     }
+      },
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
-    //proxy: true     // proxy 사용
-    baseURL: 'https://api.instagram.com',
-    proxyHeaders: false,
-    credentials: false,
+    proxy: true     // proxy 사용
+    //baseURL: 'https://api.instagram.com',
+    //proxyHeaders: false,
+    //credentials: false,
   },
   /*
   ** vuetify module configuration
