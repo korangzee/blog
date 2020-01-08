@@ -32,7 +32,7 @@ module.exports = {
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [
+  plugins: ['~plugins/vue-jsonp',
   ],
   /*
   ** Nuxt.js dev-modules
@@ -63,7 +63,7 @@ module.exports = {
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
-    proxy: 'https://korangzee.github.io/blog/auth/'     // proxy 사용
+    //proxy: 'https://korangzee.github.io/blog/auth/'     // proxy 사용
     //baseURL: 'https://api.instagram.com',
     //proxyHeaders: false,
     //credentials: false,
@@ -93,6 +93,7 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    vendor: ['vue-jsonp'],
     /*
     ** You can extend webpack config here
     */
