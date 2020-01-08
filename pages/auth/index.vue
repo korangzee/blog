@@ -52,7 +52,7 @@ export default {
     if(this.code) {
       console.log('post')
       //let res = await axios.post(`https://api.instagram.com/oauth/access_token`, { headers: { 'content-type': 'application/x-www-form-urlencoded', 'Access-Control-Allow-Origin': '*'}, app_id : '2461918490735728', app_secret: '05711ff94fdcca7b23a7cc4371c95c21', grant_type: 'authorization_code', redirect_uri:'https://korangzee.github.io/blog/auth/', code:this.code})
-      let res = await this.$jsonp('https://api.instagram.com/oauth/access_token', { app_id : '2461918490735728', app_secret: '05711ff94fdcca7b23a7cc4371c95c21', grant_type: 'authorization_code', redirect_uri:'https://korangzee.github.io/blog/auth/', code:this.code })
+      let res = await this.$jsonp('https://api.instagram.com/oauth/access_token', { headers: { 'content-type': 'application/x-www-form-urlencoded', 'Access-Control-Allow-Origin': '*'}, app_id : '2461918490735728', app_secret: '05711ff94fdcca7b23a7cc4371c95c21', grant_type: 'authorization_code', redirect_uri:'https://korangzee.github.io/blog/auth/', code:this.code })
       console.log(res)
     }
   },
