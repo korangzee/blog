@@ -33,6 +33,7 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: ['~plugins/vue-jsonp',
+  '~plugins/vue-jquery'
   ],
   /*
   ** Nuxt.js dev-modules
@@ -93,7 +94,7 @@ module.exports = {
   ** Build configuration
   */
   build: {
-    vendor: ['vue-jsonp'],
+    vendor: ['vue-jsonp', 'jquery'],
     /*
     ** You can extend webpack config here
     */
