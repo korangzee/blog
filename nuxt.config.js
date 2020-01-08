@@ -32,8 +32,7 @@ module.exports = {
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: ['~plugins/vue-jsonp',
-  '~plugins/vue-jquery'
+  plugins: [
   ],
   /*
   ** Nuxt.js dev-modules
@@ -48,26 +47,12 @@ module.exports = {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/markdownit',
-    '@nuxtjs/proxy',
   ],
-  // proxy: {
-  //   // '/api': 'https://api.instagram.com'
-  //   '/api': {
-  //     target: 'https://api.instagram.com',
-  //     pathRewrite: {
-  //       '^/api' : '/'
-  //       }
-  //     }
-  //   },
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
-    //proxy: 'https://korangzee.github.io/blog/auth/'     // proxy 사용
-    //baseURL: 'https://api.instagram.com',
-    //proxyHeaders: false,
-    //credentials: false,
   },
   /*
   ** vuetify module configuration
@@ -94,7 +79,6 @@ module.exports = {
   ** Build configuration
   */
   build: {
-    vendor: ['vue-jsonp', 'jquery'],
     /*
     ** You can extend webpack config here
     */
