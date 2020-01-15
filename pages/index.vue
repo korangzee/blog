@@ -3,12 +3,12 @@
     <v-col>
       <v-card>
         <v-card-title class="headline">
-          Welcome to the Korangzee's blog!
+          Welcome to the Tattoo up!
         </v-card-title>
         <v-card-text>
-          <p>다양한 IT, Finance에 관한 내용을 다루는 블로그 입니다.</p>
+          <!-- <p>다양한 IT, Finance에 관한 내용을 다루는 블로그 입니다.</p>
           <p>건전한 토론과 의사소통은 언제든 환영입니다</p>
-          <p>email: korangzee@gmail.com</p>
+          <p>email: korangzee@gmail.com</p> -->
         </v-card-text>
         <v-card-actions>
         </v-card-actions>

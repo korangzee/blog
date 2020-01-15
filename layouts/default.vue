@@ -33,7 +33,7 @@
     </v-content>
 
     <v-footer fixed app>
-      <span>&copy; 2019 Korangzee's blog</span>
+      <span>&copy; 2019 tattooup</span>
     </v-footer>
 
   </v-app>
@@ -55,11 +55,11 @@ export default {
           title: 'about',
           to: '/about'
         },
-        {
-          icon: 'mdi-chart-bubble',
-          title: 'posts',
-          to: '/posts'
-        },
+        // {
+        //   icon: 'mdi-chart-bubble',
+        //   title: 'posts',
+        //   to: '/posts'
+        // },
         {
           icon: 'mdi-chart-bubble',
           title: 'auth',
@@ -67,7 +67,7 @@ export default {
         },
       ],
       right: true,
-      title: "Korangzee's blog"
+      title: "Tattoo up"
     }
   }
 }
