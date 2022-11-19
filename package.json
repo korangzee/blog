@@ -17,7 +17,7 @@
     "cross-env": "^5.2.0",
     "express": "^4.16.4",
     "markdown-it-highlightjs": "^3.0.0",
-    "nuxt": "^2.0.0",
+    "nuxt": "^2.15.8",
     "push-dir": "^0.4.1"
   },
   "devDependencies": {
